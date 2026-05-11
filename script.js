@@ -1,49 +1,3 @@
-// Criteria weights (must sum to 100)
-const weights = {
-  q1: 10,  // Problem-Solution Fit
-  q2: 10,  // Market Size
-  q3: 20,  // Traction
-  q4: 15,  // Team
-  q5: 10,  // Differentiation
-  q6: 10,  // Scalability
-  q7: 10,  // Capital Efficiency
-  q8: 10,  // Investor Alignment
-  q9: 15   // Regulatory/IP Clarity
-};
-
-// Stage thresholds
-const stages = [
-  { name: "Validation Needed", min: 0, max: 40, funding: "Grants, Bootstrapping" },
-  { name: "Idea Stage", min: 41, max: 60, funding: "Grants + Angels" },
-  { name: "Pre-Seed", min: 61, max: 80, funding: "Angels + Crowdfunding" },
-  { name: "Seed-Ready", min: 81, max: 100, funding: "Seed VC" }
-];
-
-// UK funding recommendations by stage
-const ukRecommendations = {
-  "Validation Needed": [
-    { type: "Grants", name: "Innovate UK Smart Grants", link: "https://www.ukri.org/opportunity/innovate-uk-smart-grants/", description: "Non-dilutive funding for R&D projects (up to £250K)." },
-    { type: "Grants", name: "SBRI Healthcare", link: "https://www.sbrihealthcare.co.uk/", description: "Grants for healthcare innovations." },
-    { type: "Accelerator", name: "Growth Forge", link: "https://growthforge.co.uk", description: "South West accelerator with funding support." }
-  ],
-  "Idea Stage": [
-    { type: "Grants", name: "Innovate UK", link: "https://www.ukri.org/councils/innovate-uk/", description: "UK’s innovation agency for early-stage projects." },
-    { type: "Angels", name: "South West Angel Network", link: "https://www.swangels.co.uk/", description: "Angel investors for South West startups." },
-    { type: "Angels", name: "Bristol Private Equity Club", link: "https://www.bpec.co.uk/", description: "Local angel network for Bristol-based startups." }
-  ],
-  "Pre-Seed": [
-    { type: "Angels", name: "South West Angel Network", link: "https://www.swangels.co.uk/", description: "Local angel network." },
-    { type: "VC", name: "Octopus Ventures (Pre-Seed)", link: "https://octopusventures.com/", description: "Early-stage VC with health/CPG focus." },
-    { type: "Crowdfunding", name: "Crowdcube", link: "https://www.crowdcube.com/", description: "Equity crowdfunding for UK startups." },
-    { type: "Crowdfunding", name: "Seedrs", link: "https://www.seedrs.com/", description: "Equity crowdfunding with a strong CPG track record." }
-  ],
-  "Seed-Ready": [
-    { type: "VC", name: "Balderton Capital", link: "https://www.balderton.com/", description: "Leading European VC for consumer/health startups." },
-    { type: "VC", name: "MMC Ventures", link: "https://www.mmc.vc/", description: "Data-driven VC for scalable startups." },
-    { type: "VC", name: "Ascension", link: "https://ascension.vc/", description: "VC with a focus on impact and scalability." }
-  ]
-};
-
 // Criteria names for display
 const criteriaNames = {
   q1: "Problem-Solution Fit",
@@ -65,7 +19,7 @@ const scoreBands = [
   { name: "Seed-Ready", min: 8.5, max: 9, funding: "Seed VC", description: "Approach VCs with a strong pitch and traction." }
 ];
 
-// UK funding recommendations by stage (same as before)
+// UK funding recommendations by stage
 const ukRecommendations = {
   "Validation Needed": [
     { type: "Grants", name: "Innovate UK Smart Grants", link: "https://www.ukri.org/opportunity/innovate-uk-smart-grants/", description: "Non-dilutive funding for R&D projects (up to £250K)." },
@@ -154,7 +108,7 @@ function calculateResults() {
 
 // Handle form submission
 document.getElementById("assessment-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+  e.preventDefault(); // Prevent page reload
   calculateResults();
 
   // Optional: Send email with results (requires backend)
