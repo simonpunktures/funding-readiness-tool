@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funding Readiness Tool | Steampunk Ventures</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/steampunk-logo.png" alt="Steampunk Ventures" class="logo" onerror="this.style.display='none'">
+      <h1>Is Your Startup Ready for Investment?</h1>
+      <p class="subtitle">Answer 9 questions to get your <strong>Funding Readiness Score</strong> and a <strong>custom UK funding strategy</strong>.</p>
+    </header>
+
+    <form id="assessment-form">
+      <div class="question" data-weight="10">
+        <h3>1. Problem-Solution Fit</h3>
+        <p>Is the pain point your startup solves <strong>urgent and clear</strong>?</p>
+        <div class="options">
+          <label><input type="radio" name="q1" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q1" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q1" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="10">
+        <h3>2. Market Size</h3>
+        <p>Is your Total Addressable Market (TAM) <strong>greater than £50M</strong>?</p>
+        <div class="options">
+          <label><input type="radio" name="q2" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q2" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q2" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="20">
+        <h3>3. Traction</h3>
+        <p>Do you have <strong>revenue, users, or pilot partnerships</strong>?</p>
+        <div class="options">
+          <label><input type="radio" name="q3" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q3" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q3" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="15">
+        <h3>4. Team</h3>
+        <p>Do you have a <strong>team with domain expertise and execution ability</strong>?</p>
+        <div class="options">
+          <label><input type="radio" name="q4" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q4" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q4" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="10">
+        <h3>5. Differentiation</h3>
+        <p>Do you have a <strong>defensible advantage</strong> (e.g., IP, tech, brand)?</p>
+        <div class="options">
+          <label><input type="radio" name="q5" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q5" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q5" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="10">
+        <h3>6. Scalability</h3>
+        <p>Can you <strong>10x revenue without proportional cost increases</strong>?</p>
+        <div class="options">
+          <label><input type="radio" name="q6" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q6" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q6" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="10">
+        <h3>7. Capital Efficiency</h3>
+        <p>Can you grow with <strong>£250K–£1M</strong>?</p>
+        <div class="options">
+          <label><input type="radio" name="q7" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q7" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q7" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="10">
+        <h3>8. Investor Alignment</h3>
+        <p>Are there <strong>investors who specialize in your sector</strong>?</p>
+        <div class="options">
+          <label><input type="radio" name="q8" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q8" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q8" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="question" data-weight="15">
+        <h3>9. Regulatory/IP Clarity</h3>
+        <p>Do you have <strong>freedom to operate</strong> in your target market (e.g., UKCA/FDA approval, patents)?</p>
+        <div class="options">
+          <label><input type="radio" name="q9" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q9" value="50"> ⚠️ Partial</label>
+          <label><input type="radio" name="q9" value="0"> ❌ No</label>
+        </div>
+      </div>
+
+      <div class="user-info">
+        <h3>Get Your Free Report</h3>
+        <p>Enter your email to receive your <strong>custom funding strategy</strong> and UK investor recommendations.</p>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <button type="submit" class="cta-button">Calculate My Score</button>
+      </div>
+    </form>
+
+    <div id="results" class="hidden">
+      <h2>Your Funding Readiness Score: <span id="score">--%</span></h2>
+      <div id="stage"></div>
+      <div id="gaps"></div>
+      <div id="recommendations"></div>
+      <div class="cta">
+        <p>Need help fixing your gaps? <a href="https://steampunkventures.com/contact" class="cta-link">Book a free 15-minute audit</a> with our team.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Built by <a href="https://steampunkventures.com">Steampunk Ventures</a> | For <a href="https://growthforge.co.uk">Growth Forge</a> startups</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
