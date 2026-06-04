@@ -24,28 +24,27 @@ const ukRecommendations = {
   "Validation Needed": [
     { type: "Grants", name: "UKRI Funding Finder", link: "https://www.ukri.org/apply-for-funding/", description: "Non-dilutive funding for R&D projects." },
     { type: "Tax", name: "Westcotts Chartered Accountants", link: "https://westcotts.uk/specialist-sectors/manufacturing-technology/", description: "Advice on R&D Tax Credits and Patent Box." },
-    { type: "Test and Validate", name: "Market Testing", link: "https://www.lennysnewsletter.com/p/how-to-validate-your-b2b-startup", description: "Be prepared to listen, learn and pivot." }
+    { type: "Test and Validate", name: "Market Testing", link: "https://www.lennysnewsletter.com/p/how-to-validate-your-b2b-startup", description: "Be prepared to listen, learn and pivot." },
     { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ],
   "Idea Stage": [
     { type: "Grants", name: "UKRI", link: "https://www.ukri.org/apply-for-funding/", description: "UK’s innovation agency for early-stage projects." },
-    { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." }
+    { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." },
     { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ],
   "Pre-Seed": [
     { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." },
     { type: "VC", name: "Shipshape", link: "https://www.shipshape.vc/", description: "Search engine to find investors." },
-    { type: "Crowdfunding", name: "The Crowdspace", link: "https://thecrowdspace.com/", description: "Search and filter Investment Platforms by UK & Equity." }
+    { type: "Crowdfunding", name: "The Crowdspace", link: "https://thecrowdspace.com/", description: "Search and filter Investment Platforms by UK & Equity." },
     { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ],
   "Seed-Ready": [
     { type: "Fundraising community", name: "Focused for Business", link: "https://focusedforbusiness.com/startup-business-support/", description: "Early-stage advice, accelerator and community for founders." },
     { type: "VC", name: "Shipshape", link: "https://www.shipshape.vc/", description: "Search engine to find investors." },
-    { type: "Crowdfunding", name: "The Crowdspace", link: "https://thecrowdspace.com/", description: "Search and filter Investment Platforms by UK & Equity." }
+    { type: "Crowdfunding", name: "The Crowdspace", link: "https://thecrowdspace.com/", description: "Search and filter Investment Platforms by UK & Equity." },
     { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ]
 };
-
 // Calculate total score and stage
 function calculateResults() {
   let totalScore = 0;
