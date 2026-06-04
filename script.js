@@ -22,22 +22,27 @@ const scoreBands = [
 // UK funding recommendations by stage
 const ukRecommendations = {
   "Validation Needed": [
-    { type: "Grants", name: "Innovate UK Smart Grants", link: "https://www.ukri.org/opportunity/innovate-uk-smart-grants/", description: "Non-dilutive funding for R&D projects (up to £250K)." },
-    { type: "Grants", name: "SBRI Healthcare", link: "https://www.sbrihealthcare.co.uk/", description: "Grants for healthcare innovations." },
-    { type: "Accelerator", name: "Growth Forge", link: "https://growthforge.co.uk", description: "South West accelerator with funding support." }
+    { type: "Grants", name: "UKRI Funding Finder", link: "https://www.ukri.org/apply-for-funding/", description: "Non-dilutive funding for R&D projects." },
+    { type: "Tax", name: "Westcotts Chartered Accountants", link: "https://westcotts.uk/specialist-sectors/manufacturing-technology/", description: "Advice on R&D Tax Credits and Patent Box." },
+    { type: "Test and Validate", name: "Market Testing", link: "https://www.lennysnewsletter.com/p/how-to-validate-your-b2b-startup", description: "Be prepared to listen, learn and pivot." }
+    { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ],
   "Idea Stage": [
-    { type: "Grants", name: "Innovate UK", link: "https://www.ukri.org/councils/innovate-uk/", description: "UK’s innovation agency for early-stage projects." },
-    { type: "Angels", name: "South West Angel Network", link: "https://www.swangels.co.uk/", description: "Angel investors for South West startups." }
+    { type: "Grants", name: "UKRI", link: "https://www.ukri.org/apply-for-funding/", description: "UK’s innovation agency for early-stage projects." },
+    { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." }
+    { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ],
   "Pre-Seed": [
-    { type: "Angels", name: "South West Angel Network", link: "https://www.swangels.co.uk/", description: "Local angel network." },
-    { type: "VC", name: "Octopus Ventures (Pre-Seed)", link: "https://octopusventures.com/", description: "Early-stage VC with health/CPG focus." },
-    { type: "Crowdfunding", name: "Crowdcube", link: "https://www.crowdcube.com/", description: "Equity crowdfunding for UK startups." }
+    { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." },
+    { type: "VC", name: "Shipshape", link: "https://www.shipshape.vc/", description: "Search engine to find investors." },
+    { type: "Crowdfunding", name: "The Crowdspace", link: "https://thecrowdspace.com/", description: "Search and filter Investment Platforms by UK & Equity." }
+    { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ],
   "Seed-Ready": [
-    { type: "VC", name: "Balderton Capital", link: "https://www.balderton.com/", description: "Leading European VC for consumer/health startups." },
-    { type: "VC", name: "MMC Ventures", link: "https://www.mmc.vc/", description: "Data-driven VC for scalable startups." }
+    { type: "Fundraising community", name: "Focused for Business", link: "https://focusedforbusiness.com/startup-business-support/", description: "Early-stage advice, accelerator and community for founders." },
+    { type: "VC", name: "Shipshape", link: "https://www.shipshape.vc/", description: "Search engine to find investors." },
+    { type: "Crowdfunding", name: "The Crowdspace", link: "https://thecrowdspace.com/", description: "Search and filter Investment Platforms by UK & Equity." }
+    { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ]
 };
 
