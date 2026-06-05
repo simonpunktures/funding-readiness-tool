@@ -30,8 +30,8 @@ const ukRecommendations = {
   "Product Market Fit Stage": [
     { type: "Grants", name: "UKRI", link: "https://www.ukri.org/apply-for-funding/", description: "UK’s innovation agency for early-stage projects." },
     { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." },
-    { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
-    { type: "Sales expertise", name: "Contact Steampunk for contacts in specific verticals", link: "https://www.steampunk.ventures/", description: "Support with opportunity identification, bid strategy development, stakeholder mapping, and tailored engagement plans." },
+    { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." },
+    { type: "Sales expertise", name: "Contact Steampunk for contacts in specific verticals", link: "https://www.steampunk.ventures/", description: "Support with opportunity identification, bid strategy development, stakeholder mapping, and tailored engagement plans." }
   ],
   "Pre-Seed": [
     { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." },
