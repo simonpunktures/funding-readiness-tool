@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Funding Readiness Tool | Steampunk Ventures</title>
+  <title>Startup Fundraising Readiness Assessment</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="assets/SPV_logo_long_colour.png" alt="Steampunk Ventures" class="logo" onerror="this.style.display='none'">
-      <h1>Is Your Startup Ready for Investment?</h1>
-      <p class="subtitle">Answer 9 questions to get your <strong>Funding Readiness Score</strong> and a <strong>custom UK funding strategy</strong>.</p>
+      <h1>Startup Fundraising Readiness Assessment</h1>
+      <p>Answer 9 quick questions to discover your funding stage and get tailored UK investor recommendations.</p>
     </header>
 
-    <form id="assessment-form">
+    <form id="assessment-form" netlify netlify-honeypot="bot-field">
+      <!-- Criteria Questions -->
       <div class="question" data-weight="10">
         <h3>1. Problem-Solution Fit</h3>
         <p>Is the pain point your startup solves <strong>urgent and clear</strong>?</p>
         <div class="options">
-          <label><input type="radio" name="q1" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q1" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q1" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q1" value="0"> ❌ No</label>
         </div>
@@ -28,29 +27,29 @@
 
       <div class="question" data-weight="10">
         <h3>2. Market Size</h3>
-        <p>Is your Total Addressable Market (TAM) <strong>greater than £50M</strong>?</p>
+        <p>Is your target market <strong>large and growing</strong>?</p>
         <div class="options">
-          <label><input type="radio" name="q2" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q2" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q2" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q2" value="0"> ❌ No</label>
         </div>
       </div>
 
-      <div class="question" data-weight="20">
+      <div class="question" data-weight="10">
         <h3>3. Traction</h3>
-        <p>Do you have <strong>revenue, users, or pilot partnerships</strong>?</p>
+        <p>Do you have <strong>early traction</strong> (e.g., users, revenue, partnerships)?</p>
         <div class="options">
-          <label><input type="radio" name="q3" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q3" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q3" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q3" value="0"> ❌ No</label>
         </div>
       </div>
 
-      <div class="question" data-weight="15">
+      <div class="question" data-weight="10">
         <h3>4. Team</h3>
-        <p>Do you have a <strong>team with domain expertise and execution ability</strong>?</p>
+        <p>Does your team have the <strong>skills and experience</strong> to execute?</p>
         <div class="options">
-          <label><input type="radio" name="q4" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q4" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q4" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q4" value="0"> ❌ No</label>
         </div>
@@ -58,9 +57,9 @@
 
       <div class="question" data-weight="10">
         <h3>5. Differentiation</h3>
-        <p>Do you have a <strong>defensible advantage</strong> (e.g., IP, tech, brand)?</p>
+        <p>Is your solution <strong>unique and defensible</strong>?</p>
         <div class="options">
-          <label><input type="radio" name="q5" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q5" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q5" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q5" value="0"> ❌ No</label>
         </div>
@@ -68,9 +67,9 @@
 
       <div class="question" data-weight="10">
         <h3>6. Scalability</h3>
-        <p>Can you <strong>10x revenue without proportional cost increases</strong>?</p>
+        <p>Can your business <strong>scale efficiently</strong>?</p>
         <div class="options">
-          <label><input type="radio" name="q6" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q6" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q6" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q6" value="0"> ❌ No</label>
         </div>
@@ -78,9 +77,9 @@
 
       <div class="question" data-weight="10">
         <h3>7. Capital Efficiency</h3>
-        <p>Can you grow with <strong>£250K–£1M</strong>?</p>
+        <p>Are you <strong>capital-efficient</strong> (e.g., low burn, high margins)?</p>
         <div class="options">
-          <label><input type="radio" name="q7" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q7" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q7" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q7" value="0"> ❌ No</label>
         </div>
@@ -88,46 +87,47 @@
 
       <div class="question" data-weight="10">
         <h3>8. Investor Alignment</h3>
-        <p>Are there <strong>investors who specialize in your sector</strong>?</p>
+        <p>Do you have <strong>investor interest or warm intros</strong>?</p>
         <div class="options">
-          <label><input type="radio" name="q8" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q8" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q8" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q8" value="0"> ❌ No</label>
         </div>
       </div>
 
-      <div class="question" data-weight="15">
+      <div class="question" data-weight="10">
         <h3>9. Regulatory/IP Clarity</h3>
         <p>Do you have <strong>freedom to operate</strong> in your target market (e.g., UKCA/FDA approval, patents)?</p>
         <div class="options">
-          <label><input type="radio" name="q9" value="100" required> ✅ Yes</label>
+          <label><input type="radio" name="q9" value="100"> ✅ Yes</label>
           <label><input type="radio" name="q9" value="50"> ⚠️ Partial</label>
           <label><input type="radio" name="q9" value="0"> ❌ No</label>
         </div>
       </div>
 
+      <!-- User Info Section -->
       <div class="user-info">
         <h3>Get Your Free Report</h3>
         <p>Enter your email to receive your <strong>custom funding strategy</strong> and UK investor recommendations.</p>
         <input type="email" id="email" name="email" placeholder="Your email" required>
+        <input type="hidden" name="bot-field" /> <!-- Honeypot for spam -->
         <button type="submit" class="cta-button">Calculate My Score</button>
       </div>
     </form>
 
+    <!-- Results Section (hidden by default) -->
     <div id="results" class="hidden">
-      <h2>Your Funding Readiness Score: <span id="score">--/9</span></h2>
+      <h2>Your Results</h2>
+      <div id="score"></div>
       <div id="stage"></div>
       <div id="gaps"></div>
       <div id="recommendations"></div>
-      <div class="cta">
-        <p>Need help fixing your gaps? <a href="https://www.steampunk.ventures/" class="cta-link">Book a free 30-minute audit</a> with our team.</p>
-      </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Built by <a href="https://steampunk.ventures">Steampunk Ventures</a> | For <a href="https://techsouthwest.co.uk/growth-forge">Growth Forge</a> startups</p>
-  </footer>
+    <footer>
+      <p>Built by <a href="https://steampunkventures.com">Steampunk Ventures</a> | For <a href="https://growthforge.co.uk">Growth Forge</a> startups</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
