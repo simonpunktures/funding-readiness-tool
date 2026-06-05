@@ -14,7 +14,7 @@ const criteriaNames = {
 // Score bands (total score out of 9)
 const scoreBands = [
   { name: "Validation Needed", min: 0, max: 4, funding: "Grants, Bootstrapping", description: "Focus on validating your idea and fixing critical gaps." },
-  { name: "Idea Stage", min: 4.5, max: 6, funding: "Grants + Angels", description: "Apply for grants and seek angel investment to build traction." },
+  { name: "Product Market Fit Stage", min: 4.5, max: 6, funding: "Grants + Angels", description: "Apply for grants and seek angel investment to build traction." },
   { name: "Pre-Seed", min: 6.5, max: 8, funding: "Angels + Crowdfunding", description: "Target angels and crowdfunding platforms for early-stage capital." },
   { name: "Seed-Ready", min: 8.5, max: 9, funding: "Seed VC", description: "Approach VCs with a strong pitch and traction." }
 ];
@@ -27,10 +27,11 @@ const ukRecommendations = {
     { type: "Test and Validate", name: "Market Testing", link: "https://www.lennysnewsletter.com/p/how-to-validate-your-b2b-startup", description: "Be prepared to listen, learn and pivot." },
     { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
   ],
-  "Idea Stage": [
+  "Product Market Fit Stage": [
     { type: "Grants", name: "UKRI", link: "https://www.ukri.org/apply-for-funding/", description: "UK’s innovation agency for early-stage projects." },
     { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." },
     { type: "Structure and Ecosystem", name: "Accelerators", link: "https://accelerate-fyi.vercel.app/", description: "See what is out there that could help with your problem - look for alignment with your goals even if the programme isn't local." }
+    { type: "Sales expertise", name: "Contact Steampunk for contacts in specific verticals", link: "https://www.steampunk.ventures/", description: "Support with opportunity identification, bid strategy development, stakeholder mapping, and tailored engagement plans." },
   ],
   "Pre-Seed": [
     { type: "Angels", name: "UK Business Angels Association", link: "https://ukbaa.org.uk/member-directory/", description: "Member Directory (register for free as a subscriber)." },
